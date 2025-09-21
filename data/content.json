@@ -1,0 +1,292 @@
+{
+  "site": {
+    "name": "Golden Crown Design and Build",
+    "tagline": "Premium Home Construction & Renovation",
+    "phone": "(555) 123-4567",
+    "email": "info@goldencrown.com",
+    "address": "123 Main Street, Your City, State 12345"
+  },
+  "hero": {
+    "title": "Transform Your Home with Expert Craftsmanship",
+    "subtitle": "From complete renovations to custom builds, we bring your vision to life with unmatched quality and attention to detail.",
+    "cta": "Get Your Free Estimate",
+    "backgroundImage": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
+  },
+  "services": [
+    {
+      "id": "whole-house",
+      "title": "Whole House Renovations",
+      "description": "Complete home transformations that maximize your space, functionality, and style.",
+      "image": "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg",
+      "features": ["Full home redesign", "Structural modifications", "Modern updates", "Increased property value"]
+    },
+    {
+      "id": "kitchen",
+      "title": "Kitchen Renovations",
+      "description": "Create the heart of your home with custom kitchen designs that blend beauty and functionality.",
+      "image": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg",
+      "features": ["Custom cabinetry", "Premium countertops", "Modern appliances", "Functional layouts"]
+    },
+    {
+      "id": "bathroom",
+      "title": "Bathroom Renovations",
+      "description": "Luxurious bathroom spaces designed for comfort, style, and relaxation.",
+      "image": "https://images.pexels.com/photos/1571455/pexels-photo-1571455.jpeg",
+      "features": ["Spa-like designs", "Premium fixtures", "Custom tile work", "Efficient layouts"]
+    },
+    {
+      "id": "basement",
+      "title": "Basement Finishing",
+      "description": "Transform your basement into a functional living space that adds value to your home.",
+      "image": "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg",
+      "features": ["Family rooms", "Home theaters", "Home offices", "Guest suites"]
+    },
+    {
+      "id": "additions",
+      "title": "Additions",
+      "description": "Expand your living space with seamlessly integrated home additions.",
+      "image": "https://images.pexels.com/photos/1571452/pexels-photo-1571452.jpeg",
+      "features": ["Room additions", "Second stories", "Sunrooms", "Garage expansions"]
+    },
+    {
+      "id": "custom-homes",
+      "title": "Custom Homes",
+      "description": "Build your dream home from the ground up with our expert design and construction team.",
+      "image": "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg",
+      "features": ["Custom designs", "Premium materials", "Energy efficient", "Personalized features"]
+    }
+  ],
+  "portfolio": {
+    "title": "Our Portfolio",
+    "subtitle": "Explore our completed projects and see the quality craftsmanship that sets Golden Crown apart.",
+    "projects": [
+      {
+        "id": "modern-kitchen-remodel",
+        "title": "Modern Kitchen Transformation",
+        "category": "Kitchen Renovation",
+        "location": "Westfield, NJ",
+        "year": "2024",
+        "description": "Complete kitchen renovation featuring custom cabinetry, quartz countertops, and premium appliances. This project transformed a dated 1980s kitchen into a modern culinary masterpiece.",
+        "beforeImage": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg",
+        "afterImage": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg",
+        "features": [
+          "Custom white shaker cabinets",
+          "Quartz waterfall island",
+          "Subway tile backsplash",
+          "Stainless steel appliances",
+          "Hardwood flooring"
+        ],
+        "budget": "$75,000 - $100,000"
+      },
+      {
+        "id": "luxury-bathroom-suite",
+        "title": "Luxury Master Bathroom Suite",
+        "category": "Bathroom Renovation",
+        "location": "Summit, NJ",
+        "year": "2024",
+        "description": "Spa-inspired master bathroom renovation with heated floors, custom vanity, and walk-in shower with multiple shower heads.",
+        "beforeImage": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg",
+        "afterImage": "https://images.pexels.com/photos/1571455/pexels-photo-1571455.jpeg",
+        "features": [
+          "Walk-in shower with rain head",
+          "Heated marble floors",
+          "Double vanity with quartz tops",
+          "Freestanding soaking tub",
+          "Custom lighting design"
+        ],
+        "budget": "$50,000 - $75,000"
+      },
+      {
+        "id": "whole-house-renovation",
+        "title": "Victorian Home Restoration",
+        "category": "Whole House Renovation",
+        "location": "Cranford, NJ",
+        "year": "2023",
+        "description": "Complete restoration of a 1920s Victorian home, preserving original character while adding modern amenities and functionality.",
+        "beforeImage": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
+        "afterImage": "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg",
+        "features": [
+          "Restored original hardwood floors",
+          "Updated electrical and plumbing",
+          "Modern kitchen with period details",
+          "Refinished original trim work",
+          "Energy-efficient windows"
+        ],
+        "budget": "$200,000 - $300,000"
+      },
+      {
+        "id": "basement-family-room",
+        "title": "Basement Family Entertainment Center",
+        "category": "Basement Finishing",
+        "location": "Millburn, NJ",
+        "year": "2024",
+        "description": "Transformed an unfinished basement into a multi-functional family entertainment space with home theater, bar area, and game room.",
+        "beforeImage": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
+        "afterImage": "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg",
+        "features": [
+          "Home theater with surround sound",
+          "Custom wet bar with wine storage",
+          "Game area with built-in seating",
+          "Luxury vinyl plank flooring",
+          "Recessed lighting throughout"
+        ],
+        "budget": "$60,000 - $80,000"
+      },
+      {
+        "id": "custom-deck-patio",
+        "title": "Multi-Level Deck & Patio Oasis",
+        "category": "Exterior",
+        "location": "Berkeley Heights, NJ",
+        "year": "2023",
+        "description": "Custom multi-level deck and patio design creating seamless indoor-outdoor living with built-in seating and outdoor kitchen.",
+        "beforeImage": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
+        "afterImage": "https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg",
+        "features": [
+          "Composite decking material",
+          "Built-in outdoor kitchen",
+          "Fire pit seating area",
+          "Pergola with retractable shade",
+          "Integrated landscape lighting"
+        ],
+        "budget": "$40,000 - $60,000"
+      },
+      {
+        "id": "custom-dream-home",
+        "title": "Modern Custom Dream Home",
+        "category": "Custom Home",
+        "location": "New Providence, NJ",
+        "year": "2023",
+        "description": "Ground-up construction of a 4,500 sq ft modern custom home featuring open floor plans, smart home technology, and sustainable materials.",
+        "beforeImage": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
+        "afterImage": "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg",
+        "features": [
+          "Open concept living spaces",
+          "Smart home automation",
+          "Energy-efficient design",
+          "Custom millwork throughout",
+          "Gourmet chef's kitchen"
+        ],
+        "budget": "$800,000+"
+      }
+    ]
+  },
+  "exteriors": {
+    "title": "Exterior Services",
+    "subtitle": "Enhance your home's curb appeal and functionality with our exterior renovation services.",
+    "services": [
+      {
+        "id": "deck",
+        "title": "Decks",
+        "description": "Custom deck construction and renovation for outdoor living and entertainment.",
+        "image": "https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg"
+      },
+      {
+        "id": "patio",
+        "title": "Patios",
+        "description": "Beautiful patio designs that extend your living space into the outdoors.",
+        "image": "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg"
+      },
+      {
+        "id": "roofing",
+        "title": "Roofing",
+        "description": "Professional roofing services to protect and enhance your home.",
+        "image": "https://images.pexels.com/photos/1571464/pexels-photo-1571464.jpeg"
+      },
+      {
+        "id": "siding",
+        "title": "Siding",
+        "description": "Premium siding installation and replacement for lasting beauty and protection.",
+        "image": "https://images.pexels.com/photos/1571456/pexels-photo-1571456.jpeg"
+      }
+    ]
+  },
+  "form": {
+    "title": "Free Estimate & Design Consultation",
+    "subtitle": "Tell us about your project and we'll provide a detailed estimate tailored to your needs.",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter your full name"
+      },
+      {
+        "name": "address",
+        "label": "Address",
+        "type": "text",
+        "required": true,
+        "placeholder": "Your current address"
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": true,
+        "placeholder": "(555) 123-4567"
+      },
+      {
+        "name": "projectAddress",
+        "label": "Project Address",
+        "type": "text",
+        "required": true,
+        "placeholder": "Where is the project located?"
+      },
+      {
+        "name": "projectDescription",
+        "label": "About Your Project",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "Please describe your project in detail..."
+      },
+      {
+        "name": "budget",
+        "label": "What is your budget?",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Under $25,000",
+          "$25,000 - $50,000",
+          "$50,000 - $100,000",
+          "$100,000 - $200,000",
+          "$200,000 - $500,000",
+          "Over $500,000"
+        ]
+      },
+      {
+        "name": "referral",
+        "label": "How did you hear about Golden Crown?",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Google Search",
+          "Social Media",
+          "Referral from Friend/Family",
+          "Previous Customer",
+          "Home Show",
+          "Other"
+        ]
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "project": "Whole House Renovation",
+      "text": "Golden Crown transformed our outdated home into a modern masterpiece. Their attention to detail and professionalism exceeded our expectations.",
+      "rating": 5
+    },
+    {
+      "name": "Michael Chen",
+      "project": "Kitchen Renovation",
+      "text": "The team delivered our dream kitchen on time and within budget. The craftsmanship is exceptional and we couldn't be happier.",
+      "rating": 5
+    },
+    {
+      "name": "Emily Rodriguez",
+      "project": "Custom Home",
+      "text": "From design to completion, Golden Crown made building our custom home a seamless experience. Highly recommended!",
+      "rating": 5
+    }
+  ]
+}
