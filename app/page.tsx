@@ -36,7 +36,7 @@ export default function Home() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
-          <div className="w-16 h-16 border-4 border-amber-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <div className="w-16 h-16 border-4 border-gold-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
           <p className="text-gray-600">Loading...</p>
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
-      <Hero content={content.hero} />
+      <Hero content={content.heroSlides ?? [content.hero]} />
       <Services services={content.services} />
       <Exteriors content={content.exteriors} />
       <Portfolio content={content.portfolio} />

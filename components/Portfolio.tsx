@@ -74,8 +74,8 @@ export default function Portfolio({ content }: PortfolioProps) {
                 onClick={() => setFilter(category)}
                 variant={filter === category ? "default" : "outline"}
                 className={filter === category 
-                  ? "bg-amber-600 hover:bg-amber-700 text-white" 
-                  : "border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white"
+                  ? "bg-gold-600 hover:bg-gold-700 text-white" 
+                  : "border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white"
                 }
               >
                 {category}
@@ -113,7 +113,7 @@ export default function Portfolio({ content }: PortfolioProps) {
                     <Button
                       onClick={() => setSelectedProject(project)}
                       size="sm"
-                      className="absolute top-4 right-4 bg-amber-600 hover:bg-amber-700 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="absolute top-4 right-4 bg-gold-600 hover:bg-gold-700 text-white opacity-0 group-hover:opacity-100 transition-opacity"
                     >
                       <Eye className="w-4 h-4" />
                     </Button>
@@ -122,13 +122,13 @@ export default function Portfolio({ content }: PortfolioProps) {
                 
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <Badge variant="secondary" className="bg-amber-100 text-amber-800">
+                    <Badge variant="secondary" className="bg-gold-100 text-gold-800">
                       {project.category}
                     </Badge>
                     <span className="text-sm text-gray-500">{project.year}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gold-600 transition-colors">
                     {project.title}
                   </h3>
                   
@@ -143,7 +143,7 @@ export default function Portfolio({ content }: PortfolioProps) {
                   
                   <Button
                     onClick={() => setSelectedProject(project)}
-                    className="w-full bg-amber-600 hover:bg-amber-700 text-white group"
+                    className="w-full bg-gold-600 hover:bg-gold-700 text-white group"
                   >
                     View Details
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -165,7 +165,7 @@ export default function Portfolio({ content }: PortfolioProps) {
             <Button
               onClick={scrollToEstimate}
               size="lg"
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg group"
+              className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-4 text-lg group"
             >
               Get Your Free Estimate
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -254,7 +254,7 @@ export default function Portfolio({ content }: PortfolioProps) {
                   <ul className="space-y-2">
                     {selectedProject.features.map((feature, index) => (
                       <li key={index} className="flex items-start gap-2 text-gray-600">
-                        <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-gold-600 rounded-full mt-2 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -266,7 +266,7 @@ export default function Portfolio({ content }: PortfolioProps) {
                         setSelectedProject(null);
                         scrollToEstimate();
                       }}
-                      className="w-full bg-amber-600 hover:bg-amber-700 text-white group"
+                      className="w-full bg-gold-600 hover:bg-gold-700 text-white group"
                     >
                       Start Your Similar Project
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

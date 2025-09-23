@@ -50,7 +50,7 @@ export default function EstimateForm({ content }: EstimateFormProps) {
 
   if (isSubmitted) {
     return (
-      <section id="estimate" className="py-20 bg-amber-50">
+      <section id="estimate" className="py-20 bg-gold-50">
         <div className="container mx-auto px-4">
           <Card className="max-w-2xl mx-auto text-center bg-white border-0 shadow-xl">
             <CardContent className="pt-12 pb-12">
@@ -67,7 +67,7 @@ export default function EstimateForm({ content }: EstimateFormProps) {
               <Button
                 onClick={() => setIsSubmitted(false)}
                 variant="outline"
-                className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white"
+                className="border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white"
               >
                 Submit Another Request
               </Button>
@@ -79,7 +79,7 @@ export default function EstimateForm({ content }: EstimateFormProps) {
   }
 
   return (
-    <section id="estimate" className="py-20 bg-amber-50">
+    <section id="estimate" className="py-20 bg-gold-50">
       <div className="container mx-auto px-4">
         <Card className="max-w-4xl mx-auto bg-white border-0 shadow-xl">
           <CardHeader className="text-center pb-8">
@@ -148,7 +148,7 @@ export default function EstimateForm({ content }: EstimateFormProps) {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white py-4 text-lg font-semibold group"
+                  className="w-full bg-gold-600 hover:bg-gold-700 text-white py-4 text-lg font-semibold group"
                 >
                   {isSubmitting ? (
                     <>

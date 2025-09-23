@@ -60,6 +60,19 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+        // Custom brand colors
+        gold: {
+          50: '#FFFBEB',
+          100: '#FEF3C7',
+          200: '#FDE68A',
+          300: '#F3D38C',
+          400: '#E9C46A',
+          500: '#DAA520', // primary gold
+          600: '#C18E1A',
+          700: '#9A6F12',
+          800: '#7A5610',
+          900: '#5C430D',
+        },
       },
       keyframes: {
         'accordion-down': {

@@ -36,12 +36,12 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
             >
               <CardContent className="p-8">
                 <div className="flex items-center justify-between mb-6">
-                  <div className="flex text-amber-400">
+                  <div className="flex text-gold-400">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 fill-current" />
                     ))}
                   </div>
-                  <Quote className="w-8 h-8 text-amber-600 opacity-30" />
+                  <Quote className="w-8 h-8 text-gold-600 opacity-30" />
                 </div>
                 
                 <p className="text-gray-600 leading-relaxed mb-6 italic">
@@ -50,7 +50,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
                 
                 <div className="border-t border-gray-200 pt-4">
                   <p className="font-bold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-amber-600">{testimonial.project}</p>
+                  <p className="text-sm text-gold-600">{testimonial.project}</p>
                 </div>
               </CardContent>
             </Card>
