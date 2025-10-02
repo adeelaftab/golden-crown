@@ -18,7 +18,7 @@ export default function Header() {
         <div className="py-4">
           <div className="flex items-center">
             <Image
-              src="/logo.jpg"
+              src="/logo1.jpg"
               alt="Golden Crown Design and Build"
               width={80}
               height={80}

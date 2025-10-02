@@ -13,7 +13,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative h-[40vh] min-h-[320px] w-full">
         <Image
-          src="/logo.jpg"
+          src="/logo1.jpg"
           alt="Golden Crown logo background"
           fill
           className="object-cover opacity-20"

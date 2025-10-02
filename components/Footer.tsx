@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-6">
               <Image
-                src="/logo.jpg"
+                src="/logo1.jpg"
                 alt="Golden Crown Design and Build"
                 width={72}
                 height={72}
