@@ -1,12 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import contentData from '@/data/content.json'
+import dynamic from 'next/dynamic'
+
+const GalleryLightbox = dynamic(() => import('@/components/GalleryLightbox'), { ssr: false })
 
 interface ServiceLike {
   id: string
   title: string
   description: string
   image: string
+  images?: string[]
   features?: string[]
 }
 
@@ -102,16 +106,10 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
             </div>
           )}
 
-          {/* Gallery (uses the same image as placeholder variations) */}
+          {/* Gallery */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Gallery</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[item.image, item.image, item.image].map((img, idx) => (
-                <div key={idx} className="relative h-56 rounded-lg overflow-hidden shadow">
-                  <Image src={img} alt={`${item.title} ${idx + 1}`} fill className="object-cover" />
-                </div>
-              ))}
-            </div>
+            <GalleryLightbox images={(item.images && item.images.length > 0 ? item.images : [item.image])} title={item.title} />
           </div>
 
           {/* CTA */}

@@ -17,19 +17,19 @@
       "title": "Transform Your Home with Expert Craftsmanship",
       "subtitle": "From complete renovations to custom builds, we bring your vision to life with unmatched quality and attention to detail.",
       "cta": "Get Your Free Estimate",
-      "backgroundImage": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
+      "backgroundImage": "/Slider/Slide-1.jpg"
     },
     {
       "title": "Design • Build • Renovate",
       "subtitle": "Premium materials, meticulous execution, and a seamless experience from concept to completion.",
       "cta": "View Our Work",
-      "backgroundImage": "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg"
+      "backgroundImage": "/Slider/Slide-2.jpg"
     },
     {
       "title": "Kitchens, Baths, Basements & More",
       "subtitle": "Upgrade every space with functional layouts and modern finishes tailored to your lifestyle.",
       "cta": "Explore Services",
-      "backgroundImage": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg"
+      "backgroundImage": "/Slider/Slide-3.jpg"
     }
   ],
   "services": [
@@ -37,43 +37,178 @@
       "id": "whole-house",
       "title": "Whole House Renovations",
       "description": "Complete home transformations that maximize your space, functionality, and style.",
-      "image": "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg",
-      "features": ["Full home redesign", "Structural modifications", "Modern updates", "Increased property value"]
+      "image": "/MainImages/wholehome.jpg",
+      "images": [
+        "/whole-house-1.jpg",
+        "/whole-house-2.jpg",
+        "/whole-house-3.jpg",
+        "/whole-house-4.jpg",
+        "/whole-house-5.jpg",
+        "/whole-house-6.jpg",
+        "/whole-house-7.jpg",
+        "/whole-house-8.jpg",
+        "/whole-house-9.jpg",
+        "/whole-house-10.jpg"
+      ],
+      "features": [
+        "Full home redesign",
+        "Structural modifications",
+        "Modern updates",
+        "Increased property value",
+        "3D Design & Rendering",
+        "Permit Handling",
+        "Open Concept Layouts",
+        "Windows & Doors Replacement",
+        "Roofing & Siding Replacement",
+        "Staircase Replacement",
+        "Electrical, Plumbing & HVAC Upgrades"
+      ]
     },
     {
       "id": "kitchen",
       "title": "Kitchen Renovations",
       "description": "Create the heart of your home with custom kitchen designs that blend beauty and functionality.",
-      "image": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg",
-      "features": ["Custom cabinetry", "Premium countertops", "Modern appliances", "Functional layouts"]
+      "image": "/MainImages/kitchen.jpg",
+      "images": [
+        "/kitchen-1.jpg",
+        "/kitchen-2.jpg",
+        "/kitchen-3.jpg",
+        "/kitchen-4.jpg",
+        "/kitchen-5.jpg",
+        "/kitchen-6.jpg",
+        "/kitchen-7.jpg",
+        "/kitchen-8.jpg",
+        "/kitchen-9.jpg",
+        "/kitchen-10.jpg"
+      ],
+      "features": [
+        "Custom cabinetry",
+        "Premium countertops",
+        "Modern appliances",
+        "Functional layouts",
+        "3D Design & Rendering",
+        "Permit Handling",
+        "Flooring Upgrades",
+        "Pantry Design & Storage",
+        "Open Concept Conversions",
+        "Custom Hood Installation"
+      ]
     },
     {
       "id": "bathroom",
       "title": "Bathroom Renovations",
       "description": "Luxurious bathroom spaces designed for comfort, style, and relaxation.",
-      "image": "https://images.pexels.com/photos/1571455/pexels-photo-1571455.jpeg",
-      "features": ["Spa-like designs", "Premium fixtures", "Custom tile work", "Efficient layouts"]
+      "image": "/MainImages/bathroom.jpg",
+      "images": [
+        "/BathRoom-1.jpg",
+        "/BathRoom-2.jpg",
+        "/BathRoom-3.jpg",
+        "/BathRoom-4.jpg",
+        "/BathRoom-5.jpg",
+        "/BathRoom-6.jpg",
+        "/BathRoom-7.jpg",
+        "/BathRoom-8.jpg",
+        "/BathRoom-9.jpg",
+        "/BathRoom-10.jpg"
+      ],
+      "features": [
+        "Spa-like designs",
+        "Premium fixtures",
+        "Custom tile work",
+        "Efficient layouts",
+        "3D Design & Rendering",
+        "Permit Handling",
+        "Luxury Showers & Tubs",
+        "Custom Vanities & Cabinetry",
+        "Heated Flooring",
+        "Custom Glass Shower Doors",
+        "Curbless Shower Floors & ADA-Friendly Design",
+        "Large Format Tile Installation"
+      ]
     },
     {
       "id": "basement",
       "title": "Basement Finishing",
       "description": "Transform your basement into a functional living space that adds value to your home.",
-      "image": "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg",
-      "features": ["Family rooms", "Home theaters", "Home offices", "Guest suites"]
+      "image": "/MainImages/basement.jpg",
+      "images": [
+        "/Basement-1.jpg",
+        "/Basement-2.jpg",
+        "/Basement-3.jpg",
+        "/Basement-4.jpg",
+        "/Basement-5.jpg",
+        "/Basement-6.jpg"
+      ],
+      "features": [
+        "Family rooms",
+        "Home theaters",
+        "Home offices",
+        "Guest suites",
+        "3D Design & Rendering",
+        "Permit Handling",
+        "Basement Walkout Openings & Egress Windows",
+        "Wet Bars & Kitchenettes",
+        "Fitness Rooms",
+        "Wine Cellars",
+        "Additional Bathrooms",
+        "Private Saunas"
+      ]
     },
     {
       "id": "additions",
       "title": "Additions",
       "description": "Expand your living space with seamlessly integrated home additions.",
-      "image": "https://images.pexels.com/photos/1571452/pexels-photo-1571452.jpeg",
-      "features": ["Room additions", "Second stories", "Sunrooms", "Garage expansions"]
+      "image": "/MainImages/addition.jpg",
+      "images": [
+        "/Addition-1.jpg",
+        "/Addition-2.jpg",
+        "/Addition-3.jpg",
+        "/Addition-4.jpg",
+        "/Addition-5.jpg",
+        "/Addition-6.jpg"
+      ],
+      "features": [
+        "Room additions",
+        "Second stories",
+        "Sunrooms",
+        "Garage expansions",
+        "3D Design & Rendering",
+        "Permit Handling",
+        "Screen Porch",
+        "Kitchen Extensions & Bump-Outs",
+        "Pergolas",
+        "3- and 4-Season Rooms"
+      ]
     },
     {
       "id": "custom-homes",
       "title": "Custom Homes",
       "description": "Build your dream home from the ground up with our expert design and construction team.",
-      "image": "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg",
-      "features": ["Custom designs", "Premium materials", "Energy efficient", "Personalized features"]
+      "image": "/MainImages/custom-house.jpeg",
+      "images": [
+        "/CustomHomes-1.jpg",
+        "/CustomHomes-2.jpg",
+        "/CustomHomes-3.jpg",
+        "/CustomHomes-4.jpg",
+        "/CustomHomes-5.jpg",
+        "/CustomHomes-6.jpg",
+        "/CustomHomes-7.jpg"
+      ],
+      "features": [
+        "Custom designs",
+        "Premium materials",
+        "Energy efficient",
+        "Personalized features",
+        "3D Design & Rendering",
+        "Permit Handling",
+        "Architectural Design & Planning",
+        "Workmanship Warranties",
+        "Luxury Kitchens & Bathrooms",
+        "Custom Staircases",
+        "Home Theaters & Game Rooms",
+        "Wine Cellars & Home Gyms",
+        "Luxury Outdoor Living Spaces"
+      ]
     }
   ],
   "portfolio": {
@@ -84,7 +219,7 @@
         "id": "modern-kitchen-remodel",
         "title": "Modern Kitchen Transformation",
         "category": "Kitchen Renovation",
-        "location": "Westfield, NJ",
+        "location": "Ashburn, VA",
         "year": "2024",
         "description": "Complete kitchen renovation featuring custom cabinetry, quartz countertops, and premium appliances. This project transformed a dated 1980s kitchen into a modern culinary masterpiece.",
         "beforeImage": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg",
@@ -102,7 +237,7 @@
         "id": "luxury-bathroom-suite",
         "title": "Luxury Master Bathroom Suite",
         "category": "Bathroom Renovation",
-        "location": "Summit, NJ",
+        "location": "Leesburg, VA",
         "year": "2024",
         "description": "Spa-inspired master bathroom renovation with heated floors, custom vanity, and walk-in shower with multiple shower heads.",
         "beforeImage": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg",
@@ -120,8 +255,8 @@
         "id": "whole-house-renovation",
         "title": "Victorian Home Restoration",
         "category": "Whole House Renovation",
-        "location": "Cranford, NJ",
-        "year": "2023",
+        "location": "Falls Church, VA",
+        "year": "2025",
         "description": "Complete restoration of a 1920s Victorian home, preserving original character while adding modern amenities and functionality.",
         "beforeImage": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
         "afterImage": "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg",
@@ -138,7 +273,7 @@
         "id": "basement-family-room",
         "title": "Basement Family Entertainment Center",
         "category": "Basement Finishing",
-        "location": "Millburn, NJ",
+        "location": "Chantilly, VA",
         "year": "2024",
         "description": "Transformed an unfinished basement into a multi-functional family entertainment space with home theater, bar area, and game room.",
         "beforeImage": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
@@ -156,8 +291,8 @@
         "id": "custom-deck-patio",
         "title": "Multi-Level Deck & Patio Oasis",
         "category": "Exterior",
-        "location": "Berkeley Heights, NJ",
-        "year": "2023",
+        "location": "McLean, VA",
+        "year": "2025",
         "description": "Custom multi-level deck and patio design creating seamless indoor-outdoor living with built-in seating and outdoor kitchen.",
         "beforeImage": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
         "afterImage": "https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg",
@@ -172,10 +307,10 @@
       },
       {
         "id": "custom-dream-home",
-        "title": "Modern Custom Dream Home",
+        "title": "Master Bathroom",
         "category": "Custom Home",
-        "location": "New Providence, NJ",
-        "year": "2023",
+        "location": "Alexandria, VA",
+        "year": "2025",
         "description": "Ground-up construction of a 4,500 sq ft modern custom home featuring open floor plans, smart home technology, and sustainable materials.",
         "beforeImage": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
         "afterImage": "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg",
@@ -198,25 +333,90 @@
         "id": "deck",
         "title": "Decks",
         "description": "Custom deck construction and renovation for outdoor living and entertainment.",
-        "image": "https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg"
+        "image": "/MainImages/deck.jpg",
+        "images": [
+          "/Decks-1.jpg",
+          "/Decks-2.jpg",
+          "/Decks-3.jpg",
+          "/Decks-4.jpg",
+          "/Decks-5.jpg"
+        ],
+        "features": [
+          "Custom Design and 3D Rendering",
+          "Permit Handling",
+          "Material Options",
+          "Lighting and Electrical",
+          "Waterproofing",
+          "Pergolas and Privacy Screen",
+          "4-Season and 3-Season Room",
+          "Outdoor Kitchens"
+        ]
       },
       {
         "id": "patio",
         "title": "Patios",
         "description": "Beautiful patio designs that extend your living space into the outdoors.",
-        "image": "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg"
+        "image": "/MainImages/patios.jpg",
+        "images": [
+          "/Patios-1.jpg",
+          "/Patios-2.jpg",
+          "/Patios-3.jpg",
+          "/Patios-4.jpg",
+          "/Patios-5.jpg",
+          "/Patios-6.jpg",
+          "/Patios-7.jpg",
+          "/Patios-8.jpg"
+        ],
+        "features": [
+          "Custom Design and 3D Rendering",
+          "Permit Handling",
+          "Material Options",
+          "Drainage and Grading",
+          "Seating and Retaining Wall",
+          "Outdoor Kitchens and Bar",
+          "Lighting and Electrical",
+          "Custom Landscaping"
+        ]
       },
       {
         "id": "roofing",
         "title": "Roofing",
         "description": "Professional roofing services to protect and enhance your home.",
-        "image": "https://images.pexels.com/photos/1571464/pexels-photo-1571464.jpeg"
+        "image": "/MainImages/roof.jpg",
+        "images": [
+          "/Roofing-1.png",
+          "/Roofing-2.jpg",
+          "/Roofing-3.jpg",
+          "/Roofing-4.jpg"
+        ],
+        "features": [
+          "Roof Inspection",
+          "Permit Handling",
+          "Materials Options",
+          "Full Tear-off and Replacement",
+          "Underlayment and Waterproofing",
+          "Gutter and Downspout",
+          "Skylights Installation"
+        ]
       },
       {
         "id": "siding",
         "title": "Siding",
         "description": "Premium siding installation and replacement for lasting beauty and protection.",
-        "image": "https://images.pexels.com/photos/1571456/pexels-photo-1571456.jpeg"
+        "image": "/MainImages/siding.jpg",
+        "images": [
+          "/Siding-1.jpg",
+          "/Siding-2.jpg",
+          "/Siding-3.jpg",
+          "/Siding-4.jpg"
+        ],
+        "features": [
+          "Permit Handling",
+          "Materials Options",
+          "Full Removal and Replacement",
+          "Custom Trim and Accents",
+          "Color and Style Selection"
+        ]
       }
     ]
   },
@@ -244,13 +444,6 @@
         "type": "tel",
         "required": true,
         "placeholder": "(555) 123-4567"
-      },
-      {
-        "name": "projectAddress",
-        "label": "Project Address",
-        "type": "text",
-        "required": true,
-        "placeholder": "Where is the project located?"
       },
       {
         "name": "projectDescription",
@@ -304,7 +497,7 @@
     },
     {
       "name": "Emily Rodriguez",
-      "project": "Custom Home",
+      "project": "Master Bathroom",
       "text": "From design to completion, Golden Crown made building our custom home a seamless experience. Highly recommended!",
       "rating": 5
     }

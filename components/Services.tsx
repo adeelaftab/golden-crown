@@ -10,6 +10,7 @@ interface Service {
   title: string;
   description: string;
   image: string;
+  images?: string[];
   features: string[];
 }
 
@@ -46,11 +47,25 @@ export default function Services({ services }: ServicesProps) {
               >
                 <div className="relative overflow-hidden rounded-t-lg">
                   <div
-                    className="h-64 bg-cover bg-center bg-no-repeat group-hover:scale-110 transition-transform duration-500"
+                    className="h-80 bg-cover bg-center bg-no-repeat group-hover:scale-110 transition-transform duration-500"
                     style={{ backgroundImage: `url(${service.image})` }}
                   />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
+                  <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors pointer-events-none" />
                 </div>
+                {service.images && service.images.length > 1 && (
+                  <div className="px-4 pt-3">
+                    <div className="grid grid-cols-2 gap-3">
+                      {service.images.slice(1, 3).map((img, i) => (
+                        <div
+                          key={i}
+                          className="h-32 rounded-md overflow-hidden"
+                          style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                          aria-label={`Additional ${service.title} photo ${i + 1}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <CardHeader className="pb-4">
                   <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-gold-600 transition-colors">
                     {service.title}

@@ -139,7 +139,7 @@ export default function Footer() {
                 Licensing
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/goldencrowndb/"
                 aria-label="Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -149,7 +149,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/share/19ucnqx1Ln/?mibextid=wwXIfr"
                 aria-label="Facebook"
                 target="_blank"
                 rel="noopener noreferrer"

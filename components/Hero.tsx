@@ -38,13 +38,13 @@ export default function Hero({ content }: HeroProps) {
     if (!api) return;
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 5000);
+    }, 9000);
     return () => clearInterval(interval);
   }, [api]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <Carousel setApi={setApi} opts={{ loop: true }} className="w-full">
+      <Carousel setApi={setApi} opts={{ loop: true, duration: 40 }} className="w-full">
         <CarouselContent>
           {content.map((slide, idx) => (
             <CarouselItem key={idx}>
@@ -52,7 +52,7 @@ export default function Hero({ content }: HeroProps) {
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">
                   <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700"
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-out"
                     style={{ backgroundImage: `url(${slide.backgroundImage})` }}
                   />
                   <div className="absolute inset-0 bg-black/60" />
