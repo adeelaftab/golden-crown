@@ -79,8 +79,27 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+    overflow-x: hidden; /* prevent horizontal scrolling due to off-canvas elements */
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
   }
+}
+
+/* Mobile typography and spacing scaling */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px; /* down from default ~16px */
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 13px; /* slightly smaller on very small devices */
+  }
+}
+
+/* Smooth scrolling for in-page anchors (e.g., #estimate) */
+html {
+  scroll-behavior: smooth;
 }

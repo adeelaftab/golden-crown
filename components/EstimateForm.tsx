@@ -79,7 +79,7 @@ export default function EstimateForm({ content }: EstimateFormProps) {
   }
 
   return (
-    <section id="estimate" className="py-20 bg-gold-50">
+    <section id="estimate" className="py-20 bg-gold-50 scroll-mt-32 md:scroll-mt-40">
       <div className="container mx-auto px-4">
         <Card className="max-w-4xl mx-auto bg-white border-0 shadow-xl">
           <CardHeader className="text-center pb-8">

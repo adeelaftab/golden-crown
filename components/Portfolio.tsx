@@ -191,25 +191,23 @@ export default function Portfolio({ content }: PortfolioProps) {
             </div>
             
             <div className="p-6">
-              {/* Project Images */}
+              {/* Project Images (labels removed) */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">Before</h4>
                   <div className="relative h-64 rounded-lg overflow-hidden">
                     <Image
                       src={selectedProject.beforeImage}
-                      alt={`${selectedProject.title} - Before`}
+                      alt={selectedProject.title}
                       fill
                       className="object-cover"
                     />
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">After</h4>
                   <div className="relative h-64 rounded-lg overflow-hidden">
                     <Image
                       src={selectedProject.afterImage}
-                      alt={`${selectedProject.title} - After`}
+                      alt={selectedProject.title}
                       fill
                       className="object-cover"
                     />

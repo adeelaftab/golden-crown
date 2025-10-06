@@ -2,6 +2,7 @@
 
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 export default function Footer() {
@@ -129,15 +130,15 @@ export default function Footer() {
               © 2024 Golden Crown Design and Build. All rights reserved.
             </p>
             <div className="flex items-center gap-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-gold-400 text-sm transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-gold-400 text-sm transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-gray-400 hover:text-gold-400 text-sm transition-colors">
-                Licensing
-              </a>
+              <Button asChild size="sm" className="bg-gold-600 hover:bg-gold-700 text-white">
+                <Link href="/privacy">Privacy Policy</Link>
+              </Button>
+              <Button asChild size="sm" className="bg-gold-600 hover:bg-gold-700 text-white">
+                <Link href="/terms">Terms of Service</Link>
+              </Button>
+              <Button asChild size="sm" className="bg-gold-600 hover:bg-gold-700 text-white">
+                <Link href="/licensing">Licensing</Link>
+              </Button>
               <a
                 href="https://www.instagram.com/goldencrowndb/"
                 aria-label="Instagram"

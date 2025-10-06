@@ -222,16 +222,17 @@
         "location": "Ashburn, VA",
         "year": "2024",
         "description": "Complete kitchen renovation featuring custom cabinetry, quartz countertops, and premium appliances. This project transformed a dated 1980s kitchen into a modern culinary masterpiece.",
-        "beforeImage": "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg",
-        "afterImage": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg",
+        "beforeImage": "/ModrenKitchen-1.jpg",
+        "afterImage": "/ModrenKitchen-2.jpg",
         "features": [
           "Custom white shaker cabinets",
           "Quartz waterfall island",
           "Subway tile backsplash",
-          "Stainless steel appliances",
-          "Hardwood flooring"
+          "Modern appliances",
+          "Entire main floor replacement",
+          "Custom Hood"
         ],
-        "budget": "$75,000 - $100,000"
+        "budget": "$45,000 - $60,000"
       },
       {
         "id": "luxury-bathroom-suite",
@@ -239,17 +240,17 @@
         "category": "Bathroom Renovation",
         "location": "Leesburg, VA",
         "year": "2024",
-        "description": "Spa-inspired master bathroom renovation with heated floors, custom vanity, and walk-in shower with multiple shower heads.",
-        "beforeImage": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg",
-        "afterImage": "https://images.pexels.com/photos/1571455/pexels-photo-1571455.jpeg",
+        "description": "Spa-like master bathroom with heated floors, custom vanity, walk-in shower, and freestanding tub.",
+        "beforeImage": "/LuxuryMasterBathroom-1.jpg",
+        "afterImage": "/LuxuryMasterBathroom-2.jpg",
         "features": [
-          "Walk-in shower with rain head",
+          "Walk-in shower with marble tile",
           "Heated marble floors",
           "Double vanity with quartz tops",
           "Freestanding soaking tub",
-          "Custom lighting design"
+          "Custom accent wall design"
         ],
-        "budget": "$50,000 - $75,000"
+        "budget": "$30,000 - $40,000"
       },
       {
         "id": "whole-house-renovation",
@@ -258,16 +259,16 @@
         "location": "Falls Church, VA",
         "year": "2025",
         "description": "Complete restoration of a 1920s Victorian home, preserving original character while adding modern amenities and functionality.",
-        "beforeImage": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
-        "afterImage": "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg",
+        "beforeImage": "/VictorianHomeRenovation-1.jpg",
+        "afterImage": "/VictorianHomeRenovation-2.jpg",
         "features": [
-          "Restored original hardwood floors",
+          "New flooring in main house and basement",
           "Updated electrical and plumbing",
           "Modern kitchen with period details",
-          "Refinished original trim work",
-          "Energy-efficient windows"
+          "Remove some existing interior wall",
+          "Basement renovation"
         ],
-        "budget": "$200,000 - $300,000"
+        "budget": "$150,000 - $180,000"
       },
       {
         "id": "basement-family-room",
@@ -276,8 +277,8 @@
         "location": "Chantilly, VA",
         "year": "2024",
         "description": "Transformed an unfinished basement into a multi-functional family entertainment space with home theater, bar area, and game room.",
-        "beforeImage": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
-        "afterImage": "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg",
+        "beforeImage": "/BasementFamilyEntertainment-1.jpg",
+        "afterImage": "/BasementFamilyEntertainment-2.jpg",
         "features": [
           "Home theater with surround sound",
           "Custom wet bar with wine storage",
@@ -285,7 +286,7 @@
           "Luxury vinyl plank flooring",
           "Recessed lighting throughout"
         ],
-        "budget": "$60,000 - $80,000"
+        "budget": "$80,000 - $95,000"
       },
       {
         "id": "custom-deck-patio",
@@ -293,35 +294,34 @@
         "category": "Exterior",
         "location": "McLean, VA",
         "year": "2025",
-        "description": "Custom multi-level deck and patio design creating seamless indoor-outdoor living with built-in seating and outdoor kitchen.",
-        "beforeImage": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
-        "afterImage": "https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg",
+        "description": "Custom deck and patio design and creating outdoor kitchen and with built-in seating area and outdoor fireplace.",
+        "beforeImage": "/Deck&patio-1.jpg",
+        "afterImage": "/Deck&patio-2.jpg",
         "features": [
           "Composite decking material",
           "Built-in outdoor kitchen",
-          "Fire pit seating area",
-          "Pergola with retractable shade",
+          "Fireplace and seating area",
           "Integrated landscape lighting"
         ],
-        "budget": "$40,000 - $60,000"
+        "budget": "$80,000 - $100,000"
       },
       {
         "id": "custom-dream-home",
         "title": "Master Bathroom",
-        "category": "Custom Home",
+        "category": "Bathroom Renovation",
         "location": "Alexandria, VA",
         "year": "2025",
-        "description": "Ground-up construction of a 4,500 sq ft modern custom home featuring open floor plans, smart home technology, and sustainable materials.",
-        "beforeImage": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg",
-        "afterImage": "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg",
+        "description": "Beautifully designed master bath with a large walk-in shower, stylish freestanding tub, and calming neutral tones.",
+        "beforeImage": "/MasterBathroom-1.jpg",
+        "afterImage": "/MasterBathroom-2.jpg",
         "features": [
-          "Open concept living spaces",
-          "Smart home automation",
-          "Energy-efficient design",
-          "Custom millwork throughout",
-          "Gourmet chef's kitchen"
+          "Large walk-in glass shower",
+          "Freestanding soaking tub",
+          "Double sink vanity",
+          "Modern lighting fixtures",
+          "Calm, neutral color palette"
         ],
-        "budget": "$800,000+"
+        "budget": "$40,000 - $55,000"
       }
     ]
   },
