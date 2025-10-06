@@ -7,8 +7,30 @@ const dmSans = DM_Sans({ subsets: ['latin'], weight: ['400', '500', '700'], vari
 const playfair = Playfair_Display({ subsets: ['latin'], weight: ['400', '600', '700'], variable: '--font-heading' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://goldencrowndb.netlify.app/'),
   title: 'Golden Crown Design and Build',
-  description: 'Next App',
+  description: '',
+  openGraph: {
+    title: 'Golden Crown Design and Build',
+    description: '',
+    url: 'https://goldencrowndb.netlify.app/',
+    siteName: 'Golden Crown Design and Build',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Golden Crown Design and Build',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Golden Crown Design and Build',
+    description: '',
+    images: ['/og-image.jpg'],
+  },
 };
 
 export default function RootLayout({
