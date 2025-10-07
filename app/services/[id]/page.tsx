@@ -40,7 +40,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
       <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
         <div className="max-w-lg text-center">
           <h1 className="text-3xl font-bold text-gray-900 mb-3">Service Not Found</h1>
-          <p className="text-gray-600 mb-6">The page you are looking for doesn\'t exist or was moved.</p>
+          <p className="text-gray-600 mb-6">The page you are looking for doesn't exist or was moved.</p>
           <Link href="/" className="inline-block bg-gold-600 hover:bg-gold-700 text-white px-6 py-3 rounded-md">Go Home</Link>
         </div>
       </div>
@@ -94,7 +94,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
         <div className="container mx-auto px-4">
           {item.features && item.features.length > 0 && (
             <div className="mb-10">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">What\'s Included</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">What's Included</h2>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {item.features.map((f, i) => (
                   <li key={i} className="flex items-start gap-2 text-gray-700">
@@ -115,7 +115,7 @@ export default function ServiceDetailPage({ params }: { params: { id: string } }
           {/* CTA */}
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
             <h3 className="text-xl font-bold text-gray-900 mb-2">Interested in {item.title}?</h3>
-            <p className="text-gray-600 mb-4">Get in touch and we\'ll provide a detailed estimate and timeline for your project.</p>
+            <p className="text-gray-600 mb-4">Get in touch and we'll provide a detailed estimate and timeline for your project.</p>
             <Link href="#estimate" className="inline-block bg-gold-600 hover:bg-gold-700 text-white px-6 py-3 rounded-md">
               Get a Free Estimate
             </Link>
