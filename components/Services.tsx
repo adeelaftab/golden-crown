@@ -41,10 +41,10 @@ export default function Services({ services }: ServicesProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Link key={service.id} href={`/services/${service.id}`} className="block">
-              <Card
-                className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white border-0 shadow-lg cursor-pointer"
-              >
+            <Card
+              key={service.id}
+              className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white border-0 shadow-lg"
+            >
                 <div className="relative overflow-hidden rounded-t-lg">
                   <div
                     className="h-80 bg-cover bg-center bg-no-repeat group-hover:scale-110 transition-transform duration-500"
@@ -83,19 +83,30 @@ export default function Services({ services }: ServicesProps) {
                       </li>
                     ))}
                   </ul>
-                  <Button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToEstimate();
-                    }}
-                    className="w-full bg-gold-600 hover:bg-gold-700 text-white group"
-                  >
-                    Get Quote
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  <div className="flex flex-col gap-3">
+                    <Button
+                      asChild
+                      className="w-full bg-gold-600 hover:bg-gold-700 text-white group"
+                    >
+                      <Link href={`/services/${service.id}`}>
+                        View Details
+                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </Button>
+                    <Button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        scrollToEstimate();
+                      }}
+                      variant="outline"
+                      className="w-full border-gold-600 text-gold-600 hover:bg-gold-50 group"
+                    >
+                      Get Quote
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
-            </Link>
           ))}
         </div>
       </div>

@@ -44,10 +44,10 @@ export default function Exteriors({ content }: ExteriorsProps) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {content.services.map((service, index) => (
-            <Link key={service.id} href={`/services/${service.id}`} className="block">
-              <Card
-                className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white border-0 shadow-lg cursor-pointer"
-              >
+            <Card
+              key={service.id}
+              className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white border-0 shadow-lg"
+            >
                 <div className="relative overflow-hidden rounded-t-lg">
                   <div
                     className="h-64 bg-cover bg-center bg-no-repeat group-hover:scale-110 transition-transform duration-500"
@@ -85,21 +85,32 @@ export default function Exteriors({ content }: ExteriorsProps) {
                       ))}
                     </ul>
                   )}
-                  <Button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToEstimate();
-                    }}
-                    variant="outline"
-                    size="sm"
-                    className="w-full border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-white group"
-                  >
-                    Learn More
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  <div className="flex flex-col gap-2">
+                    <Button
+                      asChild
+                      size="sm"
+                      className="w-full bg-gold-600 hover:bg-gold-700 text-white group"
+                    >
+                      <Link href={`/services/${service.id}`}>
+                        View Details
+                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </Button>
+                    <Button
+                      onClick={(e) => {
+                        e.preventDefault();
+                        scrollToEstimate();
+                      }}
+                      variant="outline"
+                      size="sm"
+                      className="w-full border-gold-600 text-gold-600 hover:bg-gold-50 group"
+                    >
+                      Get Quote
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
-            </Link>
           ))}
         </div>
       </div>

@@ -3,7 +3,7 @@
     "name": "Golden Crown Design and Build",
     "tagline": "Premium Home Construction & Renovation",
     "phone": "202-600-6005",
-    "email": "info@goldencrown.com",
+    "email": "info@goldencrowndb.com",
     "address": "44228 Big Trail Terrace, Ashburn, VA 20147"
   },
   "hero": {
@@ -22,13 +22,13 @@
     {
       "title": "Design • Build • Renovate",
       "subtitle": "Premium materials, meticulous execution, and a seamless experience from concept to completion.",
-      "cta": "View Our Work",
+      "cta": "Get Your Free Estimate",
       "backgroundImage": "/Slider/Slide-2.jpg"
     },
     {
       "title": "Kitchens, Baths, Basements & More",
       "subtitle": "Upgrade every space with functional layouts and modern finishes tailored to your lifestyle.",
-      "cta": "Explore Services",
+      "cta": "Get Your Free Estimate",
       "backgroundImage": "/Slider/Slide-3.jpg"
     }
   ],
