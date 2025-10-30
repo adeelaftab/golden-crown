@@ -56,6 +56,12 @@ export default function Header() {
             >
               About
             </a>
+            <a
+              href="/products-partners"
+              className="text-gray-700 hover:text-gold-600 transition-colors"
+            >
+              Products & Partners
+            </a>
             <button
               onClick={() => scrollToSection('testimonials')}
               className="text-gray-700 hover:text-gold-600 transition-colors"
