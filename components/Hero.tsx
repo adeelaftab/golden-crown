@@ -55,16 +55,16 @@ export default function Hero({ content }: HeroProps) {
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-out"
                     style={{ backgroundImage: `url(${slide.backgroundImage})` }}
                   />
-                  <div className="absolute inset-0 bg-black/45" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/55" />
                 </div>
 
                 {/* Content */}
                 <div className="relative z-10 container mx-auto px-4 text-center text-white">
                   <div className="max-w-4xl mx-auto">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)] [text-shadow:_2px_2px_4px_rgb(0_0_0_/_80%)]">
                       {slide.title}
                     </h1>
-                    <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]">
+                    <p className="text-xl md:text-2xl mb-8 leading-relaxed drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] [text-shadow:_1px_1px_3px_rgb(0_0_0_/_70%)]">
                       {slide.subtitle}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

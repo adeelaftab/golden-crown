@@ -1,13 +1,15 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
+import dynamic from 'next/dynamic';
+import contentData from '@/data/content.json';
 
-export const metadata = {
-  title: 'About Us | Golden Crown Design and Build',
-  description:
-    'Learn about Golden Crown Design and Build — serving the DMV area with premium renovations, custom homes, and craftsmanship backed by a workmanship warranty.',
-}
+const EstimateFormDialog = dynamic(() => import('@/components/EstimateFormDialog'), { ssr: false });
 
 export default function AboutPage() {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   return (
     <main className="min-h-screen bg-white">
       {/* Hero */}
@@ -137,12 +139,22 @@ export default function AboutPage() {
                 Tell us about your vision — we’ll provide a detailed estimate and timeline.
               </p>
             </div>
-            <Link href="/#estimate" className="inline-block bg-gold-600 hover:bg-gold-700 text-white px-6 py-3 rounded-md">
+            <button 
+              onClick={() => setIsDialogOpen(true)}
+              className="inline-block bg-gold-600 hover:bg-gold-700 text-white px-6 py-3 rounded-md"
+            >
               Get a Free Estimate
-            </Link>
+            </button>
           </div>
         </div>
       </section>
+
+      {/* Estimate Form Dialog */}
+      <EstimateFormDialog
+        open={isDialogOpen}
+        onOpenChange={setIsDialogOpen}
+        content={contentData.form}
+      />
     </main>
   )
 }

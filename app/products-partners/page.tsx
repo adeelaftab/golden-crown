@@ -21,7 +21,7 @@ const partners = [
   },
   {
     name: 'TW Perry',
-    url: 'https://lansingbp.com/',
+    url: 'https://www.twperry.com/',
     logo: '/partners/tw-perry.png'
   },
   {
@@ -132,7 +132,7 @@ const productCategories = [
         name: 'Armstrong Flooring',
         description: 'Premium hardwood and resilient flooring solutions',
         logo: '/products/flooring/armstrong.png',
-        url: 'https://info.armstrongflooring.com/'
+        url: 'https://www.armstrongflooring.com/en-us'
       },
       {
         name: 'Bruce',
