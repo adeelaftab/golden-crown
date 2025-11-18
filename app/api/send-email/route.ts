@@ -29,7 +29,7 @@ export async function POST(request: Request) {
 
     const data = await resend.emails.send({
       from: 'Golden Crown Design <onboarding@resend.dev>', // This will be replaced with your verified domain
-      to: ['raheel.aftab9@gmail.com'],
+      to: ['info@goldencrowndb.com'],
       subject: `New Estimate Request${serviceTitle ? ` - ${serviceTitle}` : ''}`,
       html: emailContent,
       // Also send a plain text version
