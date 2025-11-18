@@ -43,19 +43,40 @@ export default function EstimateFormDialog({ open, onOpenChange, content, servic
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    try {
+      // Send email via API
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          formData,
+          serviceTitle,
+        }),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast.success("Your request has been submitted successfully! We'll contact you within 24 hours.");
-    
-    // Reset form after 3 seconds and close dialog
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({});
-      onOpenChange(false);
-    }, 3000);
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Failed to send email');
+      }
+
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      toast.success("Your request has been submitted successfully! We'll contact you within 24 hours.");
+      
+      // Reset form after 3 seconds and close dialog
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({});
+        onOpenChange(false);
+      }, 3000);
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setIsSubmitting(false);
+      toast.error("Failed to submit your request. Please try again or contact us directly.");
+    }
   };
 
   return (
