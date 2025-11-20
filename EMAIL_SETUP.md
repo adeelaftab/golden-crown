@@ -1,63 +1,58 @@
-# Email Setup Guide
+# Email Setup Guide (Gmail)
 
-This project uses [Resend](https://resend.com/) for sending emails. Resend offers a **free tier** with:
-- 100 emails per day
-- 3,000 emails per month
-- No credit card required
+This project now uses **Gmail (via nodemailer)** for sending emails when the estimate form / "Submit Request" button is used.
 
 ## Setup Instructions
 
-### 1. Create a Resend Account
+### 1. Gmail Account
 
-1. Go to [https://resend.com/signup](https://resend.com/signup)
-2. Sign up for a free account (no credit card required)
+Use the following Gmail account for sending emails:
 
-### 2. Get Your API Key
+- Email: `goldencrowndb@gmail.com`
 
-1. After signing in, go to [API Keys](https://resend.com/api-keys)
-2. Click "Create API Key"
-3. Give it a name (e.g., "Golden Crown Production")
-4. Copy the API key (it starts with `re_`)
+If this account has 2‑step verification enabled, create an **App password** in your Google Account and use that as the password for SMTP.
 
-### 3. Configure Your Environment
+### 2. Configure Environment Variables
 
-1. Copy the `.env.local.example` file to `.env.local`:
-   ```bash
-   cp .env.local.example .env.local
+1. Copy `.env.local.example` to `.env.local` (if you haven’t already).
+2. Open `.env.local` and set:
+
+   ```
+   GMAIL_USER=goldencrowndb@gmail.com
+   GMAIL_PASS=your-gmail-app-password-or-account-password
    ```
 
-2. Open `.env.local` and add your Resend API key:
-   ```
-   RESEND_API_KEY=re_5CM8kRhm_CsBnC9zLXvqjYw9AczABT8by
-   ```
+These values are read by `app/api/send-email/route.ts` to authenticate with Gmail.
 
-3. **Important:** Never commit `.env.local` to version control (it's already in `.gitignore`)
+### 3. How Emails Are Sent
 
-### 4. Verify Your Domain (Optional but Recommended)
+- **Transport:** nodemailer with Gmail service
+- **From:** `Golden Crown Design <goldencrowndb@gmail.com>` (configured via `GMAIL_USER`)
+- **To:** `info@goldencrowndb.com`
+- **Subject:** "New Estimate Request" (optionally includes the selected service title)
+- **Content:** All submitted form fields, formatted as HTML, plus a plain text version.
 
-By default, emails are sent from `onboarding@resend.dev`. To use your own domain:
-
-1. Go to [Domains](https://resend.com/domains) in your Resend dashboard
-2. Click "Add Domain"
-3. Enter your domain (e.g., `goldencrowndb.com`)
-4. Add the provided DNS records to your domain
-5. Wait for verification (usually takes a few minutes)
-6. Update the `from` field in `app/api/send-email/route.ts`:
-   ```typescript
-   from: 'Golden Crown Design <no-reply@goldencrowndb.com>',
-   ```
-
-### 5. Test the Integration
+### 4. Testing
 
 1. Start your development server:
    ```bash
    pnpm dev
    ```
+2. Open the site and navigate to the estimate form.
+3. Fill it out and click **Submit Request**.
+4. Check the inbox for `info@goldencrowndb.com`.
 
-2. Navigate to your estimate form
-3. Fill out and submit the form
-4. Check your Resend dashboard to see the email was sent
-5. Check `info@goldencrowndb.com` inbox for the email
+### 5. Troubleshooting
+
+- **Authentication errors**
+  - Confirm `GMAIL_USER` and `GMAIL_PASS` are correct.
+  - If using an App password, ensure it hasn’t been revoked.
+- **Emails not arriving**
+  - Check spam/junk folder.
+  - Confirm `info@goldencrowndb.com` is correct.
+- **Environment not picked up**
+  - Ensure `.env.local` is in the project root.
+  - Restart the dev server after changing environment variables.
 
 ## Email Configuration
 
@@ -67,23 +62,7 @@ The email configuration is in `app/api/send-email/route.ts`:
 - **Subject:** Includes service title if provided
 - **Content:** All form fields formatted as HTML
 
-## Troubleshooting
-
-### API Key Not Working
-- Make sure you copied the entire API key (starts with `re_`)
-- Ensure `.env.local` is in the root directory
-- Restart your dev server after adding the API key
-
-### Emails Not Arriving
-- Check your Resend dashboard [Logs](https://resend.com/logs) for delivery status
-- Verify the recipient email address in the API route
-- Check spam folder
-
-### Rate Limits
-- Free tier: 100 emails/day, 3,000/month
-- If you exceed limits, upgrade your Resend plan
-
 ## Support
 
-- Resend Documentation: [https://resend.com/docs](https://resend.com/docs)
-- Resend Support: [https://resend.com/support](https://resend.com/support)
+- Gmail Documentation: [https://developers.google.com/gmail/api](https://developers.google.com/gmail/api)
+- Gmail Support: [https://support.google.com/mail](https://support.google.com/mail)

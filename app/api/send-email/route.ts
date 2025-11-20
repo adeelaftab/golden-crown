@@ -1,7 +1,18 @@
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 587,
+  secure: false, // true for 465, false for other ports
+  auth: {
+    user: 'goldencrowndb@gmail.com',
+    pass: 'ilvvzuvulvclocda',
+  },
+  tls: {
+    rejectUnauthorized: false
+  }
+});
 
 // Mark this route as dynamic
 export const dynamic = 'force-dynamic';
@@ -27,22 +38,24 @@ export async function POST(request: Request) {
       </p>
     `;
 
-    const data = await resend.emails.send({
-      from: 'Golden Crown Design <onboarding@resend.dev>', // This will be replaced with your verified domain
-      to: ['info@goldencrowndb.com'],
+    console.log('Sending email from: goldencrowndb@gmail.com');
+
+    const info = await transporter.sendMail({
+      from: 'Golden Crown Design <goldencrowndb@gmail.com>',
+      to: 'info@goldencrowndb.com,',
       subject: `New Estimate Request${serviceTitle ? ` - ${serviceTitle}` : ''}`,
       html: emailContent,
-      // Also send a plain text version
       text: `New Estimate Request${serviceTitle ? ` - ${serviceTitle}` : ''}\n\n${Object.entries(formData)
         .map(([key, value]) => `${key}: ${value}`)
         .join('\n')}`,
     });
 
-    return NextResponse.json({ success: true, data }, { status: 200 });
+    return NextResponse.json({ success: true, data: info }, { status: 200 });
   } catch (error) {
     console.error('Email sending error:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Failed to send email';
     return NextResponse.json(
-      { success: false, error: 'Failed to send email' },
+      { success: false, error: errorMessage },
       { status: 500 }
     );
   }
